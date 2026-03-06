@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Instagram, Facebook, Calendar } from "lucide-react";
+import { MessageCircle, Instagram, Facebook, Calendar, Music } from "lucide-react";
 import { useState } from "react";
 
 const FloatingButtons = () => {
@@ -15,14 +15,20 @@ const FloatingButtons = () => {
     {
       icon: Instagram,
       label: "Instagram",
-      href: "https://www.instagram.com/saborasalud_puebla/",
+      href: "https://www.instagram.com/serenity.surgery.planner/",
       bg: "bg-gradient-to-br from-pink-500 to-purple-600",
     },
     {
       icon: Facebook,
       label: "Facebook",
-      href: "https://www.facebook.com/saborasaludpuebla",
+      href: "https://www.facebook.com/profile.php?id=61570160084370&mibextid=ZbWKwL",
       bg: "bg-blue-600",
+    },
+    {
+      icon: Music,
+      label: "TikTok",
+      href: "https://www.tiktok.com/@serenity.surgery.planner?_t=ZM-8sKKuBOpEww&_r=1",
+      bg: "bg-foreground",
     },
   ];
 
