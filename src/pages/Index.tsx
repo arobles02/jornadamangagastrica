@@ -3,6 +3,7 @@ import IncludesSection from "@/components/IncludesSection";
 import DoctorSection from "@/components/DoctorSection";
 import ProcessSection from "@/components/ProcessSection";
 import CTASection from "@/components/CTASection";
+import FloatingButtons from "@/components/FloatingButtons";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <DoctorSection />
       <ProcessSection />
       <CTASection />
+      <FloatingButtons />
     </main>
   );
 };
