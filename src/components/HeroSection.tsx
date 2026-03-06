@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import heroImg from "@/assets/hero-manga.jpg";
-import logo from "@/assets/logo-serenity-real.png";
+import logo from "@/assets/logo-horizontal.jpeg";
 
 const HeroSection = () => {
   return (
