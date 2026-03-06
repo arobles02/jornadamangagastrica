@@ -19,7 +19,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="flex-1 text-primary-foreground space-y-6"
         >
-          <img src={logo} alt="Serenity Surgery Planner" className="w-48 md:w-56 mb-6 drop-shadow-lg" />
+          <img src={logo} alt="Serenity Surgery Planner" className="w-36 md:w-44 mb-4 rounded-lg" />
           <p className="text-lg font-medium tracking-widest uppercase opacity-80">
             Serenity Surgery Planner
           </p>

@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import IncludesSection from "@/components/IncludesSection";
 import DoctorSection from "@/components/DoctorSection";
 import ProcessSection from "@/components/ProcessSection";
+import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import FloatingButtons from "@/components/FloatingButtons";
 
@@ -12,10 +13,13 @@ const Index = () => {
       <IncludesSection />
       <DoctorSection />
       <ProcessSection />
+      <FAQSection />
       <CTASection />
       <FloatingButtons />
     </main>
   );
 };
+
+export default Index;
 
 export default Index;
