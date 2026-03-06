@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Phone, MessageCircle, MapPin } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Globe } from "lucide-react";
+import logo from "@/assets/logo-serenity-real.png";
 
 const CTASection = () => {
   return (
@@ -11,39 +12,51 @@ const CTASection = () => {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto space-y-8"
         >
-          <h2 className="text-4xl md:text-5xl font-display font-bold">
+          <img src={logo} alt="Serenity Surgery Planner" className="w-24 mx-auto mb-4 brightness-0 invert" />
+          <h2 className="text-4xl md:text-5xl font-extrabold">
             Da el primer paso hacia tu transformación
           </h2>
-          <p className="text-xl font-sans opacity-90 leading-relaxed">
+          <p className="text-xl opacity-90 leading-relaxed">
             El turismo médico no debería sentirse caótico. Debería sentirse planeado,
             supervisado y seguro. Agenda tu consulta virtual hoy.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <a
-              href="https://wa.me/16195695034?text=Hola%2C%20me%20interesa%20la%20Jornada%20de%20Manga%20G%C3%A1strica"
+              href="https://wa.me/16195591437?text=Hola%2C%20me%20interesa%20la%20Jornada%20de%20Manga%20G%C3%A1strica"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-primary-foreground text-primary font-sans font-bold text-lg px-8 py-4 rounded-full hover:bg-primary-foreground/90 transition-all hover:scale-105 shadow-lg"
+              className="inline-flex items-center gap-3 bg-primary-foreground text-primary font-bold text-lg px-8 py-4 rounded-full hover:bg-primary-foreground/90 transition-all hover:scale-105 shadow-lg"
             >
               <MessageCircle className="w-6 h-6" />
-              WhatsApp
+              WhatsApp: +1 (619) 559-1437
             </a>
             <a
-              href="tel:6643838390"
-              className="inline-flex items-center gap-3 bg-primary-foreground/20 text-primary-foreground font-sans font-semibold text-lg px-8 py-4 rounded-full hover:bg-primary-foreground/30 transition-all border border-primary-foreground/30"
+              href="tel:6647329516"
+              className="inline-flex items-center gap-3 bg-primary-foreground/20 text-primary-foreground font-semibold text-lg px-8 py-4 rounded-full hover:bg-primary-foreground/30 transition-all border border-primary-foreground/30"
             >
               <Phone className="w-5 h-5" />
-              Llamar: 664 383 8390
+              México: 664 732 9516
             </a>
           </div>
 
-          <div className="flex items-center justify-center gap-2 text-primary-foreground/80 font-sans pt-4">
-            <MapPin className="w-5 h-5" />
-            <span>Puebla, México · Hospitales certificados</span>
+          <div className="flex flex-col items-center gap-2 text-primary-foreground/80 pt-4">
+            <div className="flex items-center gap-2">
+              <MapPin className="w-5 h-5" />
+              <span>Puebla & Tijuana, México · Hospitales certificados</span>
+            </div>
+            <a
+              href="https://www.serenitysurgeryplanner.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
+            >
+              <Globe className="w-4 h-4" />
+              <span>www.serenitysurgeryplanner.com</span>
+            </a>
           </div>
 
-          <p className="text-sm font-sans opacity-60 pt-8">
+          <p className="text-sm opacity-60 pt-8">
             © {new Date().getFullYear()} Serenity Surgery Planner · Especialistas en Puebla, México
           </p>
         </motion.div>
