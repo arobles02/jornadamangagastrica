@@ -23,20 +23,21 @@ const CTASection = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <a
-              href="https://wa.me/16195591437?text=Hola%2C%20me%20interesa%20la%20Jornada%20de%20Manga%20G%C3%A1strica"
+              href="https://calendar.app.google/6qLbKZjmkZA3nQ238"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-primary-foreground text-primary font-bold text-lg px-8 py-4 rounded-full hover:bg-primary-foreground/90 transition-all hover:scale-105 shadow-lg"
             >
-              <MessageCircle className="w-6 h-6" />
-              WhatsApp: +1 (619) 559-1437
+              📅 Agendar Valoración Sin Costo
             </a>
             <a
-              href="tel:6647329516"
-              className="inline-flex items-center gap-3 bg-primary-foreground/20 text-primary-foreground font-semibold text-lg px-8 py-4 rounded-full hover:bg-primary-foreground/30 transition-all border border-primary-foreground/30"
+              href="https://api.whatsapp.com/send/?phone=16195695034"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-green-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-green-600 transition-all hover:scale-105 shadow-lg"
             >
-              <Phone className="w-5 h-5" />
-              México: 664 732 9516
+              <MessageCircle className="w-6 h-6" />
+              WhatsApp
             </a>
           </div>
 
