@@ -1,10 +1,4 @@
 import { motion } from "framer-motion";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 const faqs = [
   {
@@ -66,8 +60,22 @@ const faqs = [
 ];
 
 const FAQSection = () => {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <section className="py-20 bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -89,22 +97,17 @@ const FAQSection = () => {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto"
         >
-          <Accordion type="single" collapsible className="space-y-3">
+          <div className="space-y-4">
             {faqs.map((faq, i) => (
-              <AccordionItem
+              <article
                 key={i}
-                value={`faq-${i}`}
-                className="bg-card border border-border rounded-xl px-6 data-[state=open]:shadow-md transition-shadow"
+                className="bg-card border border-border rounded-xl px-6 py-5 shadow-sm"
               >
-                <AccordionTrigger className="text-left text-foreground font-semibold hover:no-underline py-5">
-                  {faq.q}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
-                  {faq.a}
-                </AccordionContent>
-              </AccordionItem>
+                <h3 className="text-foreground font-semibold mb-2">{faq.q}</h3>
+                <p className="text-muted-foreground leading-relaxed">{faq.a}</p>
+              </article>
             ))}
-          </Accordion>
+          </div>
         </motion.div>
       </div>
     </section>
