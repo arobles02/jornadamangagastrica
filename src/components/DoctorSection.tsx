@@ -36,10 +36,10 @@ const DoctorSection = () => {
             className="flex-1 space-y-4"
           >
             <h2 className="text-4xl font-extrabold text-foreground">
-              Dr. Edgar Serrano García
+              Dr. Edgar Serrano García — Cirujano Bariatra en Puebla
             </h2>
             <p className="text-xl text-primary font-bold uppercase tracking-wide">
-              Cirujano Bariatra & Metabólico Certificado
+              Especialista certificado en Manga Gástrica
             </p>
 
             <div className="space-y-3 text-muted-foreground">
@@ -66,11 +66,13 @@ const DoctorSection = () => {
             </div>
 
             <p className="text-foreground leading-relaxed pt-2">
-              El Dr. Serrano trata la obesidad como una enfermedad metabólica crónica, no una condición
-              cosmética. Cada paciente pasa por evaluación médica integral, valoración nutricional,
-              estratificación de riesgo por laboratorio y preparación preoperatoria estructurada.
-              Su práctica integra protocolos bariátricos basados en evidencia, vías de recuperación
-              mejorada y técnicas laparoscópicas avanzadas.
+              Como cirujano bariatra en Puebla y especialista certificado en manga gástrica, el Dr.
+              Serrano trata la obesidad como una enfermedad metabólica crónica, no una condición
+              cosmética. Cada paciente de la jornada de manga gástrica en Puebla pasa por evaluación
+              médica integral, valoración nutricional, estratificación de riesgo por laboratorio y
+              preparación preoperatoria estructurada. Su práctica integra protocolos bariátricos
+              basados en evidencia, vías de recuperación mejorada y técnicas laparoscópicas avanzadas
+              para una cirugía bariátrica segura en Puebla.
             </p>
 
             <div className="flex flex-wrap gap-3 pt-2">
