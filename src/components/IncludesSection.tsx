@@ -1,13 +1,47 @@
 import { motion } from "framer-motion";
-import { Check, Hospital, Pill, Stethoscope, Apple, Brain, HeartPulse } from "lucide-react";
+import { Hospital, Syringe, Apple, Brain, HeartPulse, CalendarCheck, Pill, Stethoscope } from "lucide-react";
 
 const includes = [
-  { icon: Hospital, text: "1 noche de hospitalización" },
-  { icon: Pill, text: "Insumos y medicamentos necesarios durante la cirugía" },
-  { icon: Stethoscope, text: "Honorarios médicos — Bariatra certificado, anestesia y enfermería" },
-  { icon: Apple, text: "Valoración nutricional antes y después de la cirugía" },
-  { icon: Brain, text: "Valoración psicológica prequirúrgica" },
-  { icon: HeartPulse, text: "Valoración por Medicina Interna con electrocardiograma" },
+  {
+    icon: Hospital,
+    title: "Hospitalización incluida",
+    text: "1 noche de hospitalización en clínica certificada de Puebla, todo incluido.",
+  },
+  {
+    icon: Syringe,
+    title: "Anestesia y quirófano",
+    text: "Anestesiólogo certificado, quirófano y equipo de enfermería para tu manga gástrica todo incluido en Puebla.",
+  },
+  {
+    icon: Stethoscope,
+    title: "Cirujano bariatra certificado",
+    text: "Honorarios del bariatra certificado y todo el equipo médico incluidos en el paquete bariátrico.",
+  },
+  {
+    icon: Pill,
+    title: "Medicamentos e insumos",
+    text: "Insumos quirúrgicos y medicamentos necesarios durante tu cirugía bariátrica en Puebla.",
+  },
+  {
+    icon: Apple,
+    title: "Nutrióloga antes y después",
+    text: "Valoración y seguimiento con nutrióloga especializada en pacientes de manga gástrica.",
+  },
+  {
+    icon: Brain,
+    title: "Valoración psicológica",
+    text: "Acompañamiento psicológico prequirúrgico para una jornada bariátrica segura y consciente.",
+  },
+  {
+    icon: HeartPulse,
+    title: "Medicina Interna y EKG",
+    text: "Valoración por Medicina Interna con electrocardiograma para garantizar tu seguridad.",
+  },
+  {
+    icon: CalendarCheck,
+    title: "Seguimiento post-operatorio",
+    text: "Seguimiento médico y nutricional incluido para asegurar tu pérdida de peso a largo plazo.",
+  },
 ];
 
 const IncludesSection = () => {
@@ -21,10 +55,10 @@ const IncludesSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            ¿Qué incluye?
+            ¿Qué incluye el paquete de Manga Gástrica Todo Incluido en Puebla?
           </h2>
           <p className="text-lg text-muted-foreground font-sans max-w-2xl mx-auto">
-            Todo lo que necesitas para una experiencia segura y completa
+            Hospitalización, anestesia, nutrióloga, psicología y seguimiento — un paquete bariátrico todo incluido para una experiencia segura y completa.
           </p>
         </motion.div>
 
@@ -42,7 +76,8 @@ const IncludesSection = () => {
                 <item.icon className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <p className="text-foreground font-sans font-medium leading-relaxed">{item.text}</p>
+                <h3 className="text-foreground font-sans font-semibold mb-1">{item.title}</h3>
+                <p className="text-muted-foreground font-sans text-sm leading-relaxed">{item.text}</p>
               </div>
             </motion.div>
           ))}
