@@ -31,7 +31,7 @@ const CTASection = () => {
               📅 Agendar Valoración Sin Costo
             </a>
             <a
-              href="https://api.whatsapp.com/send/?phone=16195695034"
+              href="https://api.whatsapp.com/send/?phone=16195695034&text=Hola%2C%20me%20interesa%20la%20Jornada%20de%20Manga%20G%C3%A1strica%20en%20Puebla.%20%C2%BFMe%20podr%C3%ADan%20dar%20m%C3%A1s%20informaci%C3%B3n%3F"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-green-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-green-600 transition-all hover:scale-105 shadow-lg"
