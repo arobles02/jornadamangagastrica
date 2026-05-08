@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Video, FlaskConical, Plane, Hospital, HeartHandshake } from "lucide-react";
+import { Video, FlaskConical, Hospital } from "lucide-react";
 
 const steps = [
   {
@@ -13,19 +13,9 @@ const steps = [
     desc: "Laboratorios en tu país, dieta prequirúrgica con nutrióloga y evaluación psicológica virtual.",
   },
   {
-    icon: Plane,
-    title: "Viaje a Puebla",
-    desc: "Vuelo al Aeropuerto de Puebla, transporte coordinado al hotel La Quinta by Wyndham.",
-  },
-  {
     icon: Hospital,
     title: "Cirugía",
     desc: "Operación en hospitales certificados con equipo de anestesia y monitoreo continuo.",
-  },
-  {
-    icon: HeartHandshake,
-    title: "Recuperación",
-    desc: "1 noche de hospitalización, seguimiento postoperatorio virtual al regresar a casa.",
   },
 ];
 
