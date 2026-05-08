@@ -24,12 +24,15 @@ const HeroSection = () => {
             Serenity Surgery Planner
           </p>
           <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
-            <span className="italic font-bold">Jornada de</span>
+            <span className="italic font-bold">Manga Gástrica Todo Incluido</span>
             <br />
             <span className="text-6xl md:text-8xl font-black not-italic uppercase">
-              Manga Gástrica
+              en Puebla
             </span>
           </h1>
+          <h2 className="text-xl md:text-2xl font-semibold opacity-95">
+            Jornada Mayo 2026 — Paquete completo desde $69,000 MXN con cirujano bariatra certificado
+          </h2>
 
           {/* Pricing */}
           <motion.div
